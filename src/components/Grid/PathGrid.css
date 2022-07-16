@@ -1,0 +1,15 @@
+.PathGrid{
+    text-align: center;
+    border-style: solid;
+}
+
+.PathGrid-cell{
+    border-style: solid;
+    border-color: darkgray;
+    border-bottom: white;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    background-color: aquamarine;
+}
+
