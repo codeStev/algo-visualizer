@@ -7,7 +7,9 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+      <div className="App-Border">
     <PathGrid width={12} height={12}/>
+      </div>
   </React.StrictMode>
 );
 

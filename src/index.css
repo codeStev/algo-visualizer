@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App-Border{
+  padding-top: 15vw;
+  padding-left : 15vw;
+
+  width: 70vw;
+  height: 70vw;
+}

@@ -1,0 +1,20 @@
+.Cell-inactive{
+    border-style: solid;
+    border-color: darkgray;
+    border-bottom: white;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    background-color: aquamarine;
+}
+
+.Cell-active{
+    border-style: solid;
+    border-color: darkgray;
+    border-bottom: white;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    background-color: chocolate;
+}
+
