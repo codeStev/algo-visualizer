@@ -1,24 +1,33 @@
-import logo from '../../logo.svg';
 import './App.css';
+import React, {useState} from "react";
+import {Link, BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import PathFinding from "../../pages/PathFinding/PathFinding";
+import Navbar from "../Navbar/Navbar";
+import {Container} from "@mui/material";
+import Main from "../../pages/Main/Main";
+
+
 
 function App() {
+    const [routes] =useState(
+        [
+        {path: "/",
+            exact: true,
+            element: <Main/>},
+        {path: "/pathfinding",
+            exact: true,
+            element: <PathFinding/>}
+    ])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Container>
+          <Routes>
+          {routes.map(route => (
+              <Route exact={route.exact||false} path={route.path} element={route.element} />
+          ))}
+          </Routes>
+          <Navbar />
+      </Container>
   );
 }
 

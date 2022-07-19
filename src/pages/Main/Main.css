@@ -1,0 +1,17 @@
+@keyframes rotate {
+
+    from {transform: rotate3d(0,0,0,0deg)}
+    to {transform: rotate3d(-180,-180,-180,90deg)}
+}
+
+.rolling-text {
+    animation: rotate 5s alternate-reverse infinite;
+    display:inline-block;
+}
+
+.container-offset{
+    padding-top: 20vw;
+    padding-left: 15vw;
+    width: 50vw;
+    text-align: center;
+}
